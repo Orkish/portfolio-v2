@@ -49,8 +49,17 @@
 	});
 
 	// animate.css listener
-	$('.name-header').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		$('.nav-sec').addClass( 'show animated zoomIn' ); 
+	$('.name-header').one( 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+		$('.nav-sec' ).addClass( 'show animated zoomIn' ); 
+	});
+
+	// show nav bar when button is pressed
+
+	var topNav = $("nav.top-bar")
+			, btmNavBtn = $(".nav-btn");
+
+	$(btmNavBtn).on( 'click', function() {
+		topNav.fadeIn( 2000 );
 	});
 
 
