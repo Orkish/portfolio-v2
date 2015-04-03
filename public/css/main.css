@@ -47,7 +47,17 @@ svg {
 	stroke-width: .3px;
 }
 
-/* nav section */
+/* top nav */
+
+nav.top-bar {
+	display: none;
+}
+
+nav.top-bar {
+  background: #468966;
+}
+
+/* bottom nav section */
 .nav-sec.show {
 	visibility: visible;
 }
@@ -64,13 +74,13 @@ svg {
 
 .nav-btn {
 	text-decoration: none;
-	color: #fff;
+	color: #fff !important; 
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 }
 
 .nav-btn:hover {
-	color: #fff;
+	color: #fff !important;
 }
 
 .nav-box {
@@ -87,12 +97,35 @@ svg {
 	box-sizing: border-box;
 }
 
+/* make nav sticky to bottom */
+
+.main-container {
+	height: 100%;
+}
+
+.content-wrapper {
+	min-height: 100%;
+}
+
+.center-container {
+	overflow: auto;
+	padding-bottom: 200px;
+}
+
+footer.nav-sec {
+	position: relative;
+	margin-top: -200px;
+	height: 200px;
+	clear: both;
+}
+
 /* angular views global styles */
 
 #content-views {  
 	position: absolute;
   width: 100%;
   top: 9%;
+  z-index: 9;
 }
 
 .ng-enter, .ng-leave {
@@ -101,9 +134,9 @@ svg {
 }
 
 .ng-enter {
-	-webkit-animation: slideInUp .5s both ease-out;
-	-moz-animation: slideInUp .5 both ease-out;
-	animation: slideInUp .5 both ease-out;
+	-webkit-animation: bounceInUp 1.1s both ease-out;
+	-moz-animation: bounceInUp 1.1s both ease-out;
+	animation: bounceInUp 1.1s both ease-out;
 }
 
 .ng-leave {
@@ -126,9 +159,7 @@ svg {
 }
 
 .header-container {
-  clear: both;
-  display: table-cell;
-  vertical-align: middle;
+	padding-top: 25%;
 }
 
 .name-header {
@@ -166,14 +197,17 @@ svg#contact-svg {
 	background: #fff;
 	height: 100%;
 	width: 100%;
+	padding-top: 40px;
 }
 
 /** about sec **/
 .bro-pic {
-	background: url( '../assets/happy2.jpg' ) no-repeat center center fixed;
-	background-size: cover;
-	height: 300px;
-	width: 100%;
+  background: url('../assets/headshot.jpg');
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+  margin: 30px auto 0 auto;
+  border-radius: 210px;
 }
 
 .intro-section {
@@ -229,7 +263,6 @@ svg#contact-svg {
 	background-size: cover;
 	height: 650px;
 	width: 100%;
-	margin-bottom: 400px;
 }
 
 .bg-color {
@@ -245,6 +278,16 @@ svg#contact-svg {
 	font-weight: 200;
 	color: #fff;
 	text-align: center;
+	margin: 4% 0;
+}
+
+.icon {
+  text-align: center;
+  color: #fff;
+}
+
+.icon h3 {
+  color: #fff;
 }
 
 
