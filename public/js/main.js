@@ -3,22 +3,22 @@
 	// using Vivus library to animate svg 
 	var aboutSvg = new Vivus( 'about-svg', {
 				type: 'delayed'
-				, duration: 200
+				, duration: 150
 				, start: 'manual'
 			})
 			, workSvg = new Vivus( 'work-svg' , {
 					type: 'delayed'
-					, duration: 65
+					, duration: 45
 					,start: 'manual'
 			})
 			, hobbiesSvg = new Vivus( 'hobbies-svg', {
 				type: 'delayed'
-				, duration: 65
+				, duration: 45
 				, start: 'manual'
 			})
 			, contactSvg = new Vivus( 'contact-svg', {
 				type: 'delayed'
-				, duration: 65
+				, duration: 45
 				, start: 'manual'
 			});
 
@@ -56,10 +56,14 @@
 	// show nav bar when button is pressed
 
 	var topNav = $("nav.top-bar")
-			, btmNavBtn = $(".nav-btn");
+			, btmNavBtn = $(".nav-btn")
+			, homeBtn = $(".home-btn");
 
 	$(btmNavBtn).on( 'click', function() {
 		topNav.fadeIn( 2000 );
+	});
+	$(homeBtn).on( 'click' , function() {
+		topNav.fadeOut( 500 );
 	});
 
 
