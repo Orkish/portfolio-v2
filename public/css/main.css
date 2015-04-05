@@ -43,10 +43,6 @@ body {
   margin: 0;
 }
 
-svg {
-	stroke-width: .3px;
-}
-
 /* top nav */
 
 nav.top-bar {
@@ -124,7 +120,7 @@ footer.nav-sec {
 #content-views {  
 	position: absolute;
   width: 100%;
-  top: 9%;
+  top: 5%;
   z-index: 9;
 }
 
@@ -159,7 +155,7 @@ footer.nav-sec {
 }
 
 .header-container {
-	padding-top: 25%;
+	padding-top: 20%;
 }
 
 .name-header {
@@ -183,8 +179,16 @@ footer.nav-sec {
 
 /* svg styles */
 
+svg#about-svg {
+	stroke-width: .5px;
+}
+
+svg#work-svg {
+	stroke-width: .5px;
+}
+
 svg#hobbies-svg {
-	stroke-width: 4px;
+	stroke-width: 9px;
 }
 
 svg#contact-svg {
@@ -256,6 +260,10 @@ svg#contact-svg {
 	margin-bottom: 80px;
 }
 
+.about-content p {
+  line-height: 2;
+}
+
 /** tools sec **/
 
 .tools-pic {
@@ -278,7 +286,15 @@ svg#contact-svg {
 	font-weight: 200;
 	color: #fff;
 	text-align: center;
-	margin: 4% 0;
+	margin-top: 3%;
+}
+
+p.tool-text {
+  text-align: center;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
 }
 
 .icon {
