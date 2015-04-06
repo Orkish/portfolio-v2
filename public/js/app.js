@@ -12,6 +12,33 @@ app.controller( 'mainController', function() {
 
 	// work controller
 	.controller( 'workController', function() {
+			var gaSvg = new Vivus( 'ga-svg' , {
+						type: 'delayed'
+						, duration: 100
+						, start: 'manual'
+					})
+					, gaTagSvg = new Vivus( 'ga-tag-svg', {
+						type: 'delayed'
+						, duration: 90
+						, start: 'manual'
+					})
+					, ebookSvg = new Vivus( 'ebooks-svg', {
+						type: 'delayed'
+						, duration: 100
+						, start: 'manual'
+					});
+
+			// work page svg
+			$(".caption-text").on( 'mouseenter', function() {
+				var self = $( this );
+				gaSvg.play();
+				gaTagSvg.play();
+				ebookSvg.play();
+			}).on( 'mouseleave', function() {
+				gaSvg.stop().reset();
+				gaTagSvg.stop().reset();
+				ebookSvg.stop().reset();
+			});
 
 	})
 

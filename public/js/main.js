@@ -1,6 +1,6 @@
 (function() {
 
-	// using Vivus library to animate svg 
+	// creating Vivus svg elements 
 	var aboutSvg = new Vivus( 'about-svg', {
 				type: 'delayed'
 				, duration: 150
@@ -24,7 +24,7 @@
 
 	// handling vivus for index page
 	$('.nav-btn').on( 'mouseenter', function() {
-		var self = $(this)
+		var self = $( this )
 				, selfId = self[0].id;
 		console.log( selfId );
 		switch( selfId ) {
@@ -65,7 +65,6 @@
 	$(homeBtn).on( 'click' , function() {
 		topNav.fadeOut( 500 );
 	});
-
 
 
 
