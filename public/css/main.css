@@ -93,6 +93,10 @@ nav.top-bar {
 	box-sizing: border-box;
 }
 
+.top-bar-section ul li, .top-bar-section ul li a {
+  background: transparent !important;
+}
+
 /* make nav sticky to bottom */
 
 .main-container {
@@ -267,16 +271,23 @@ svg#contact-svg {
 /** tools sec **/
 
 .tools-pic {
-	background: url( '../assets/tools.jpg' ) no-repeat center center fixed;
-	background-size: cover;
-	height: 650px;
-	width: 100%;
+  background: url('../assets/tools.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
 }
 
 .bg-color {
 	background-color: rgba(44, 62, 80, .6);
 	height: 100%;
 	padding-top: 1px;
+}
+
+.tools-sec {
+  border: 2px solid #fff;
+  margin: 30px auto;
+  width: 60%;
+  border-radius: 25px;
 }
 
 .tools-header {
@@ -302,10 +313,43 @@ p.tool-text {
   color: #fff;
 }
 
+.icon:hover {
+  text-shadow: 0 0 4px rgba(192, 57, 43, 1.0);
+}
+
 .icon h3 {
   color: #fff;
 }
 
+.built-with {
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  padding: 20px;
+}
+
+.made {
+	font-family: 'Droid ', serif;
+
+}
+
+.with {
+	font-family: 'Droid ', serif;
+	font-weight: 300;
+}
+
+.love {
+	color: red;
+	font-family: cursive;	
+	font-style: italic;
+	text-decoration: line-through;
+}
+
+.keyboard {
+	font-family: 'Droid ', serif;
+
+}
 
 /* work page */
 
