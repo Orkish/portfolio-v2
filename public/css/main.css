@@ -215,6 +215,14 @@ svg#ebooks-svg {
 	stroke-width: 2px;
 }
 
+svg#airplane-svg {
+	stroke-width: 4px;
+}
+
+svg#pool-svg {
+	stroke-width: 3px;
+}
+
 /* about page */
 
 .about-container {
@@ -383,14 +391,15 @@ p.tool-text {
 		list-style-type: none;
 		margin: 0px;
 		padding: 0px;
+		text-align: center;
 		
 	}
 .caption-style-4 li{
-	float: left;
+	display: inline-block;
 	padding: 0px;
 	position: relative;
 	overflow: hidden;
-	margin-right: 5%;
+	margin: 1%;
 }
 .caption-style-4 li:hover .caption{
 	opacity: 1;
@@ -406,13 +415,14 @@ p.tool-text {
 .caption-style-4 img{
 	margin: 0px;
 	padding: 0px;
-	float: left;
+	display: inline-block;
 	z-index: 4;
 }
 .caption-style-4 .caption{
 	cursor: pointer;
 	position: absolute;
 	opacity: 0;
+	top: 0;
 	-webkit-transition:all 0.45s ease-in-out;
 	-moz-transition:all 0.45s ease-in-out;
 	-o-transition:all 0.45s ease-in-out;
@@ -436,6 +446,22 @@ p.tool-text {
 
 .caption-style-4 .ebook-blur{
 	background-color: rgba(162, 125, 34, .7);
+	height: 300px;
+	width: 400px;
+	z-index: 5;
+	position: absolute;
+}
+
+.caption-style-4 .airplane-blur {
+	background-color: rgba(52, 152, 219, .7);
+	height: 300px;
+	width: 400px;
+	z-index: 5;
+	position: absolute;
+}
+
+.caption-style-4 .pool-party-blur {
+	background-color: rgba(26, 188, 156, .7);
 	height: 300px;
 	width: 400px;
 	z-index: 5;
