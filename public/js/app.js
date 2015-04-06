@@ -24,7 +24,17 @@ app.controller( 'mainController', function() {
 					})
 					, ebookSvg = new Vivus( 'ebooks-svg', {
 						type: 'delayed'
-						, duration: 100
+						, duration: 90
+						, start: 'manual'
+					})
+					, airplaneSvg = new Vivus( 'airplane-svg', {
+						type: 'delayed'
+						, duration: 90
+						, start: 'manual'
+					})
+					, poolSvg = new Vivus( 'pool-svg' , {
+						type: 'delayed'
+						, duration: 90
 						, start: 'manual'
 					});
 
@@ -34,10 +44,14 @@ app.controller( 'mainController', function() {
 				gaSvg.play();
 				gaTagSvg.play();
 				ebookSvg.play();
+				airplaneSvg.play();
+				poolSvg.play();
 			}).on( 'mouseleave', function() {
 				gaSvg.stop().reset();
 				gaTagSvg.stop().reset();
 				ebookSvg.stop().reset();
+				airplaneSvg.stop().reset();
+				poolSvg.stop().reset();
 			});
 
 	})
