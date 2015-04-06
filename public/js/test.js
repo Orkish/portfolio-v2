@@ -1,6 +1,6 @@
 var contactSvg = new Vivus( 'contact-svg', {
 				type: 'delayed'
-				, duration: 90
+				, duration: 190
 				, start: 'manual'
 			});
 $(".box").on('click', function() {
