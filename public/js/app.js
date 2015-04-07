@@ -36,6 +36,21 @@ app.controller( 'mainController', function() {
 						type: 'delayed'
 						, duration: 90
 						, start: 'manual'
+					})
+					, heartbeatSvg = new Vivus( 'heartbeat-svg', {
+						type: 'delayed'
+						, duration: 90
+						, start: 'manual'
+					})
+					, d3Svg = new Vivus( 'd3-svg', {
+						type: 'delayed'
+						, duration: 90
+						, start: 'manual'
+					})
+					, parallaxSvg = new Vivus( 'parallax-svg', {
+						type: 'delayed'
+						, duration: 90
+						, start: 'manual'
 					});
 
 			// work page svg
@@ -46,12 +61,18 @@ app.controller( 'mainController', function() {
 				ebookSvg.play();
 				airplaneSvg.play();
 				poolSvg.play();
+				heartbeatSvg.play();
+				d3Svg.play();
+				parallaxSvg.play();
 			}).on( 'mouseleave', function() {
 				gaSvg.stop().reset();
 				gaTagSvg.stop().reset();
 				ebookSvg.stop().reset();
 				airplaneSvg.stop().reset();
 				poolSvg.stop().reset();
+				heartbeatSvg.stop().reset();
+				d3Svg.stop().reset();
+				parallaxSvg.stop().reset();
 			});
 
 	})
