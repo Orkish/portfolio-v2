@@ -223,6 +223,18 @@ svg#pool-svg {
 	stroke-width: 3px;
 }
 
+svg#heartbeat-svg {
+	stroke-width: 2px;
+}
+
+svg#d3-svg {
+	stroke-width: 2px;
+}
+
+svg#parallax-svg {
+	stroke-width: 2px;
+}
+
 /* about page */
 
 .about-container {
@@ -468,6 +480,14 @@ p.tool-text {
 	position: absolute;
 }
 
+.caption-style-4 .heartbeat-blur {
+	background-color: rgba(127, 140, 141, .7);
+	height: 300px;
+	width: 400px;
+	z-index: 5;
+	position: absolute;
+}
+
 .caption-style-4 .caption-text{
 	z-index: 10;
 	position: absolute;
@@ -476,10 +496,27 @@ p.tool-text {
 	text-align: center;
 }
 
-/* testing styles */
+/* experiment section */
 
+.experiments {
+	text-decoration: underline;
+}
 
+.caption-style-4 .d3-blur {
+	background-color: rgba(142, 68, 173, .7);
+	height: 300px;
+	width: 400px;
+	z-index: 5;
+	position: absolute;
+}
 
+.caption-style-4 .parallax-blur {
+	background-color: rgba(211, 84, 0, .7);
+	height: 300px;
+	width: 400px;
+	z-index: 5;
+	position: absolute;
+}
 
 
 
