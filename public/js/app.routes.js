@@ -38,13 +38,32 @@ angular.module( 'routerRoutes', [ 'ngRoute' ])
 			, controllerAs: 'contact'
 		})
 
-		// ga page
+		// route for ga page
 		.when( '/ga', {
 			templateUrl: 'views/pages/ga.html'
 			, controller: 'gaController'
 			, controllerAs: 'ga'
+		})
+
+		// route for ebooks page
+		.when( '/ebooks', {
+			templateUrl: 'views/pages/ebooks.html'
+			, controller: 'ebooksController'
+			, controllerAs: 'ebooks'
+		})
+
+		// routes for byeny page
+		.when( '/byeny', {
+			templateUrl: 'views/pages/byeny.html'
+			, controller: 'byenyController'
+			, controllerAs: 'byeny'
 		});
 
 	$locationProvider.html5Mode( true );
 
 });
+
+
+
+
+

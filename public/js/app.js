@@ -89,6 +89,16 @@ app.controller( 'mainController', function() {
 
 	// ga controller 
 	.controller( 'gaController', function() {
+
+	})
+
+	// ebooks controller  
+	.controller( 'ebooksController', function() {
+
+	})
+
+	// byeny controller 
+	.controller( 'byenyController', function() {
 		
 	});
 
