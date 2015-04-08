@@ -85,5 +85,17 @@ app.controller( 'mainController', function() {
 	// contact controller 
 	.controller( 'contactController', function() {
 
+	})
+
+	// ga controller 
+	.controller( 'gaController', function() {
+		
 	});
+
+
+
+
+
+
+
 

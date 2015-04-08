@@ -36,6 +36,13 @@ angular.module( 'routerRoutes', [ 'ngRoute' ])
 			templateUrl: 'views/pages/contact.html'
 			, controller: 'contactController'
 			, controllerAs: 'contact'
+		})
+
+		// ga page
+		.when( '/ga', {
+			templateUrl: 'views/pages/ga.html'
+			, controller: 'gaController'
+			, controllerAs: 'ga'
 		});
 
 	$locationProvider.html5Mode( true );
