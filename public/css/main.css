@@ -518,18 +518,35 @@ p.tool-text {
 	position: absolute;
 }
 
-/* work page general assembly */
+/* work page shared styles */
 
-.ga-container {
+.ga-container, .ebooks-container, .byeny-container {
 	background: #fff;
 	padding: 2% 5%;
 }
 
-.ga-header {
+.ga-header, .ebooks-header, .byeny-header {
 	text-align: center;
 	width: 65%;
 	margin: 0 auto;
 }
+
+p.header-desc {
+	font-family: 'Lato', sans-serif;
+	color: #555;
+	font-size: 18px;
+	margin-bottom: 3%;
+}
+
+ul.skills-section li {
+  display: inline-block;
+  width: 30%;
+  margin: 1%;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+/* work ga specific */
 
 .ga-header img {
 	margin-bottom: 5%;
@@ -541,14 +558,8 @@ p.tool-text {
   color: #555;
 }
 
-p.header-desc {
-	font-family: 'Lato', sans-serif;
-	color: #555;
-	font-size: 18px;
-	margin-bottom: 3%;
-}
 
-.ga-links {
+.ga-links, ul.skills-section.ga-skills li {
 	color: rgb(255, 0, 0);
 }
 
@@ -558,15 +569,6 @@ hr {
 
 ul.skills-section {
   padding: 5%;
-}
-
-ul.skills-section li {
-  display: inline-block;
-  width: 30%;
-  margin: 1%;
-  color: rgb(255, 0, 0);
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
 }
 
 p.img-tagline {
@@ -589,11 +591,51 @@ p.img-tagline {
   border-radius: 10px;
 }
 
+/* work ebooks specific */
 
+.ebooks-tagline, .ebooks-links, .ebooks-skills {
+	color: rgb(162, 125, 34);
+}
 
+.ebooks1-img {
+  background: url('../../assets/work-ebooks/ebooks1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-height: 490px;
+  max-width: 900px;
+  height: 490px;
+  margin: 0 auto;
+}
 
+.ebooks2-img {
+  background: url('../../assets/work-ebooks/ebooks2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-height: 490px;
+  max-width: 900px;
+  height: 490px;
+  margin: 0 auto;
+}
 
+.ebooks3-img {
+  background: url('../../assets/work-ebooks/ebooks3.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-height: 490px;
+  max-width: 900px;
+  height: 490px;
+  margin: 0 auto;
+}
 
+/* work byeny specific */
+
+.byeny-tagline, .byeny-skills, .byeny-links {
+	color: rgb(52, 152, 219);
+}
+
+.byeny-vid {
+
+}
 
 
 
