@@ -235,6 +235,10 @@ svg#parallax-svg {
 	stroke-width: 2px;
 }
 
+svg#davids-svg {
+	stroke-width: 2px;
+}
+
 /* about page */
 
 .about-container {
@@ -488,6 +492,14 @@ p.tool-text {
 	position: absolute;
 }
 
+.caption-style-4 .davids-blur {
+	background-color: rgba(255, 105, 180, .7);
+	height: 300px;
+	width: 400px;
+	z-index: 5;
+	position: absolute;
+}
+
 .caption-style-4 .caption-text{
 	z-index: 10;
 	position: absolute;
@@ -520,12 +532,12 @@ p.tool-text {
 
 /* work page shared styles */
 
-.ga-container, .ebooks-container, .byeny-container {
+.ga-container, .ebooks-container, .byeny-container, .pool-container, .heartbeat-container {
 	background: #fff;
 	padding: 2% 5%;
 }
 
-.ga-header, .ebooks-header, .byeny-header {
+.ga-header, .ebooks-header, .byeny-header, .pool-header, .heartbeat-header {
 	text-align: center;
 	width: 65%;
 	margin: 0 auto;
@@ -633,17 +645,56 @@ p.img-tagline {
 	color: rgb(52, 152, 219);
 }
 
-.byeny-vid {
+/* work pool party specific */
 
+.pool-tagline, .pool-links, .pool-skills {
+	color: rgb(26, 188, 156);
 }
 
+.pool1-img.img-box {
+  background: url('../../assets/work-pool/pool1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 900px;
+  max-height: 525px;
+  height: 525px;
+  margin: 0 auto;
+}
+.pool2-img.img-box {
+  background: url('../../assets/work-pool/pool2.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 900px;
+  max-height: 653px;
+  height: 653px;
+  width: 100%;
+  margin: 0 auto;
+}
 
+.pool3-img.img-box {
+  background: url('../../assets/work-pool/pool3.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 900px;
+  max-height: 665px;
+  height: 665px;
+  margin: 0 auto;
+}
 
+/* work heartbeat specific */
 
+.heartbeat-tagline, .heartbeat-links, .heartbeat-skills {
+	color: #c0392b;
+}
 
-
-
-
-
+.heartbeat1-img.img-box {
+  background: url('../../assets/work-heartbeat/heartbeat1.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 900px;
+  max-height: 525px;
+  height: 500px;
+  margin: 0 auto;
+}
 
 
