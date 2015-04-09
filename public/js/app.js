@@ -51,11 +51,17 @@ app.controller( 'mainController', function() {
 						type: 'delayed'
 						, duration: 90
 						, start: 'manual'
+					})
+					, davidsSvg = new Vivus( 'davids-svg', {
+						type: 'delayed'
+						, duration: 90
+						, start: 'manual'
 					});
 
 			// work page svg
 			$(".caption-text").on( 'mouseenter', function() {
 				var self = $( this );
+				console.log('this is self:', self);
 				gaSvg.play();
 				gaTagSvg.play();
 				ebookSvg.play();
@@ -64,6 +70,7 @@ app.controller( 'mainController', function() {
 				heartbeatSvg.play();
 				d3Svg.play();
 				parallaxSvg.play();
+				davidsSvg.play();
 			}).on( 'mouseleave', function() {
 				gaSvg.stop().reset();
 				gaTagSvg.stop().reset();
@@ -73,6 +80,7 @@ app.controller( 'mainController', function() {
 				heartbeatSvg.stop().reset();
 				d3Svg.stop().reset();
 				parallaxSvg.stop().reset();
+				davidsSvg.stop().reset();
 			});
 
 	})
@@ -99,7 +107,17 @@ app.controller( 'mainController', function() {
 
 	// byeny controller 
 	.controller( 'byenyController', function() {
-		
+
+	})
+
+	// pool party controller
+	.controller( 'poolController', function() {
+
+	})
+
+	// heartbeat ink controller
+	.controller( 'heartbeatController', function() {
+
 	});
 
 

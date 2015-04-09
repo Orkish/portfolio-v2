@@ -57,6 +57,20 @@ angular.module( 'routerRoutes', [ 'ngRoute' ])
 			templateUrl: 'views/pages/byeny.html'
 			, controller: 'byenyController'
 			, controllerAs: 'byeny'
+		})
+
+		// routes for pool party page
+		.when( '/pool', {
+			templateUrl: 'views/pages/pool.html'
+			, controller: 'poolController'
+			, controllerAs: 'pool'
+		})
+
+		// routes for heartbeat ink page
+		.when( '/heartbeat', {
+			templateUrl: '/views/pages/heartbeat.html'
+			, controller: 'heartbeatController'
+			, controllerAs: 'heartbeat'
 		});
 
 	$locationProvider.html5Mode( true );
