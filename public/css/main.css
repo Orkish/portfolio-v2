@@ -532,12 +532,12 @@ p.tool-text {
 
 /* work page shared styles */
 
-.ga-container, .ebooks-container, .byeny-container, .pool-container, .heartbeat-container {
+.ga-container, .ebooks-container, .byeny-container, .pool-container, .heartbeat-container, .davids-container {
 	background: #fff;
 	padding: 2% 5%;
 }
 
-.ga-header, .ebooks-header, .byeny-header, .pool-header, .heartbeat-header {
+.ga-header, .ebooks-header, .byeny-header, .pool-header, .heartbeat-header, .davids-header {
 	text-align: center;
 	width: 65%;
 	margin: 0 auto;
@@ -696,5 +696,28 @@ p.img-tagline {
   height: 500px;
   margin: 0 auto;
 }
+
+/* work davids specific */
+
+.davids-tagline, .davids-links, .davids-skills {
+	color: #ff69b4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
