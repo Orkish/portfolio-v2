@@ -118,6 +118,11 @@ app.controller( 'mainController', function() {
 	// heartbeat ink controller
 	.controller( 'heartbeatController', function() {
 
+	})
+
+	// davids controller
+	.controller( 'davidsController', function() {
+		
 	});
 
 

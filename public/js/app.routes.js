@@ -71,6 +71,13 @@ angular.module( 'routerRoutes', [ 'ngRoute' ])
 			templateUrl: '/views/pages/heartbeat.html'
 			, controller: 'heartbeatController'
 			, controllerAs: 'heartbeat'
+		})
+
+		// routes for davids page
+		.when( '/davids', {
+			templateUrl: 'views/pages/davids.html'
+			, controller: 'davidsController'
+			, controllerAs: 'davids'
 		});
 
 	$locationProvider.html5Mode( true );
