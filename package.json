@@ -1,7 +1,10 @@
 {
-	"name": "routing-app"
-	,"main": "server.js"
-	,"dependencies": {
-		"express": "~4.9.1"
-	} 
+  "name": "portfolio-node-app",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.9.1"
+  },
+  "devDependencies": {
+    "flightplan": "^0.6.2"
+  }
 }
