@@ -11,11 +11,11 @@
 					, duration: 45
 					,start: 'manual'
 			})
-			, hobbiesSvg = new Vivus( 'hobbies-svg', {
-				type: 'delayed'
-				, duration: 45
-				, start: 'manual'
-			})
+			// , hobbiesSvg = new Vivus( 'hobbies-svg', {
+			// 	type: 'delayed'
+			// 	, duration: 45
+			// 	, start: 'manual'
+			// })
 			, contactSvg = new Vivus( 'contact-svg', {
 				type: 'delayed'
 				, duration: 45
@@ -34,9 +34,9 @@
 			case "work-btn":
 				workSvg.play();
 				break;
-			case "hobbies-btn":
-				hobbiesSvg.play();
-				break;
+			// case "hobbies-btn":
+			// 	hobbiesSvg.play();
+			// 	break;
 			case "contact-btn":
 				contactSvg.play();
 				break;
@@ -44,7 +44,7 @@
 	}).on( 'mouseleave', function() {
 		aboutSvg.stop().reset();
 		workSvg.stop().reset();
-		hobbiesSvg.stop().reset();
+		// hobbiesSvg.stop().reset();
 		contactSvg.stop().reset();
 	});
 
@@ -57,7 +57,8 @@
 
 	var topNav = $("nav.top-bar")
 			, btmNavBtn = $(".nav-btn")
-			, homeBtn = $(".home-btn");
+			, homeBtn = $(".home-btn")
+			, trigger = $(".trigger").length;
 
 	$(btmNavBtn).on( 'click', function() {
 		topNav.fadeIn( 2000 );
@@ -65,7 +66,6 @@
 	$(homeBtn).on( 'click' , function() {
 		topNav.fadeOut( 500 );
 	});
-
 
 
 

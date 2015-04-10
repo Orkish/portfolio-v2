@@ -14,47 +14,47 @@ app.controller( 'mainController', function() {
 	.controller( 'workController', function() {
 			var gaSvg = new Vivus( 'ga-svg' , {
 						type: 'delayed'
-						, duration: 100
+						, duration: 75
 						, start: 'manual'
 					})
 					, gaTagSvg = new Vivus( 'ga-tag-svg', {
 						type: 'delayed'
-						, duration: 90
+						, duration: 75
 						, start: 'manual'
 					})
 					, ebookSvg = new Vivus( 'ebooks-svg', {
 						type: 'delayed'
-						, duration: 90
+						, duration: 75
 						, start: 'manual'
 					})
 					, airplaneSvg = new Vivus( 'airplane-svg', {
 						type: 'delayed'
-						, duration: 90
+						, duration: 75
 						, start: 'manual'
 					})
 					, poolSvg = new Vivus( 'pool-svg' , {
 						type: 'delayed'
-						, duration: 90
+						, duration: 75
 						, start: 'manual'
 					})
 					, heartbeatSvg = new Vivus( 'heartbeat-svg', {
 						type: 'delayed'
-						, duration: 90
+						, duration: 75
 						, start: 'manual'
 					})
 					, d3Svg = new Vivus( 'd3-svg', {
 						type: 'delayed'
-						, duration: 90
+						, duration: 75
 						, start: 'manual'
 					})
 					, parallaxSvg = new Vivus( 'parallax-svg', {
 						type: 'delayed'
-						, duration: 90
+						, duration: 75
 						, start: 'manual'
 					})
 					, davidsSvg = new Vivus( 'davids-svg', {
 						type: 'delayed'
-						, duration: 90
+						, duration: 75
 						, start: 'manual'
 					});
 
