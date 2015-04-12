@@ -10,6 +10,6 @@ app.get( '*', function( req, res ) {
 	res.sendFile( path.join( __dirname + '/public/index.html' ));
 });
 
-// starting the server 1337 for test
-app.listen(104.236.48.67);
-// console.log( 'Magical shit happening on 1337' );
+// starting the server 8080
+app.listen(1800);
+console.log( 'Magical shit happening on 1337' );
