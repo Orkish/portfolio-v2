@@ -61,7 +61,6 @@ app.controller( 'mainController', function() {
 			// work page svg
 			$(".caption-text").on( 'mouseenter', function() {
 				var self = $( this );
-				console.log('this is self:', self);
 				gaSvg.play();
 				gaTagSvg.play();
 				ebookSvg.play();

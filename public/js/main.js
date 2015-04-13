@@ -26,7 +26,7 @@
 	$('.nav-btn').on( 'mouseenter', function() {
 		var self = $( this )
 				, selfId = self[0].id;
-		console.log( selfId );
+		// console.log( selfId );
 		switch( selfId ) {
 			case "about-btn":
 				aboutSvg.play();
