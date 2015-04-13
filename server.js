@@ -11,5 +11,5 @@ app.get( '*', function( req, res ) {
 });
 
 // starting the server 8080
-app.listen(1337, "104.236.48.67");
+app.listen(1337);
 console.log( 'Magical shit happening on 1337' );
