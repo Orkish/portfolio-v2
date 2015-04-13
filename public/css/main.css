@@ -145,7 +145,7 @@ footer.nav-sec {
 }
 
 .header-container {
-	padding-top: 20%;
+	padding-top: 10%;
 }
 
 .name-header {
@@ -236,9 +236,9 @@ svg#davids-svg {
 
 /** about sec **/
 .bro-pic {
-  background: url('../assets/Headshots-1.jpg');
+  background: url('../assets/happy.jpg');
   background-size: cover;
-  background-position-y: -25px;
+  background-position-x: -75px;
   height: 400px;
   width: 400px;
   margin: 30px auto 0 auto;
