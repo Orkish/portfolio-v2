@@ -1,5 +1,9 @@
 (function() {
 
+	$(document).ready( function() {
+		$('body').addClass( 'loaded' );
+	});
+
 	// creating Vivus svg elements 
 	var aboutSvg = new Vivus( 'about-svg', {
 				type: 'delayed'
