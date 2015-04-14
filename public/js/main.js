@@ -1,8 +1,8 @@
-(function() {
+$( window ).load( function(){
 
-	$(document).ready( function() {
+	(function() {
+
 		$('body').addClass( 'loaded' );
-	});
 
 	// creating Vivus svg elements 
 	var aboutSvg = new Vivus( 'about-svg', {
@@ -19,7 +19,7 @@
 			// 	type: 'delayed'
 			// 	, duration: 45
 			// 	, start: 'manual'
-			// })
+			// })	
 			, contactSvg = new Vivus( 'contact-svg', {
 				type: 'delayed'
 				, duration: 45
@@ -75,3 +75,5 @@
 
 
 })();
+
+});
