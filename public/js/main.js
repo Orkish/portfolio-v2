@@ -3,6 +3,7 @@ $( window ).load( function(){
 	(function() {
 
 		$('body').addClass( 'loaded' );
+		$('.nav-sec' ).addClass( 'show animated zoomIn' );
 
 	// creating Vivus svg elements 
 	var aboutSvg = new Vivus( 'about-svg', {
@@ -53,9 +54,10 @@ $( window ).load( function(){
 	});
 
 	// animate.css listener
-	$('.name-header').one( 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-		$('.nav-sec' ).addClass( 'show animated zoomIn' ); 
-	});
+	// $('.name-header').one( 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+	// 	console.log('header done loading');
+	// 	$('.nav-sec' ).addClass( 'show animated zoomIn' ); 
+	// });
 
 	// show nav bar when button is pressed
 
