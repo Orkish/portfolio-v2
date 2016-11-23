@@ -1,6 +1,6 @@
-var express = require( 'express' )
+var express = require('express')
 		,app = express()
-		,path = require( 'path' );
+		,path = require('path');
 
 // set up public folder to serve public assets
 app.use( express.static( __dirname + '/public' ));
